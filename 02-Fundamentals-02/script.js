@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 // let hasDriversLicense = false;
 // const passTest = true;
@@ -47,27 +47,27 @@ console.log(`${rosie.firstName} is a ${rosie.calcAge()} years old ${rosie.job}, 
 // for loop keeps running while condition is TRUE
 
 for (let rep = 1; rep <= 10; rep++) {
-    console.log(`Lifting weights repetition 1🏋️`);
-};
+  console.log(`Lifting weights repetition 1🏋️`);
+}
 
 const rosie = [
-    'Rosie',
-    'Rabera',
-    2000,
-    'teacher',
-    ['Jane', 'Violet', 'Victor'],
-]
+  "Rosie",
+  "Rabera",
+  2000,
+  "teacher",
+  ["Jane", "Violet", "Victor"],
+];
 console.log(rosie);
 
 for (let i = 0; i < rosie.length; i++) {
-    console.log(rosie[i], typeof rosie[i]);
+  console.log(rosie[i], typeof rosie[i]);
 }
 
 const years = [1991, 2000, 2003, 2011, 1978];
 const ages = [];
 
 for (let i = 0; i < years.length; i++) {
-    ages.push(2025 - years[i]);
+  ages.push(2025 - years[i]);
 }
 console.log(ages);
 
@@ -81,9 +81,8 @@ console.log(ages);
 
 let dice = Math.trunc(Math.random() * 6) + 1;
 
-
 while (dice !== 6) {
-    console.log(`You rolled a ${dice}`);
-    dice = Math.trunc(Math.random() * 6) + 1;
-    if (dice === 6) console.log('Loop is about to end...');
-};
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log("Loop is about to end...");
+}

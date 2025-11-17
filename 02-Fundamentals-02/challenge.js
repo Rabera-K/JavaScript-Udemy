@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 /*
 const calcAverage = (a, b, c) => (a + b + c) / 3;
 const scoreDolphins = calcAverage(44, 23, 71);
@@ -76,25 +76,25 @@ const tips = [];
 const totals = [];
 
 const calcTip = function (bills) {
-    return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
+  return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
 };
 
 for (let i = 0; i < bills.length; i++) {
-    tips.push(calcTip(bills[i]));
-    totals.push(bills[i] + tips[i]);
+  tips.push(calcTip(bills[i]));
+  totals.push(bills[i] + tips[i]);
 }
 
 console.log(totals);
 console.log(tips);
 
 const calcAverage = function (arr) {
-    let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-        sum += arr[i];
-    }
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
 
-    return sum / arr.length;
-}
+  return sum / arr.length;
+};
 
 console.log(calcAverage(bills));
 console.log(calcAverage(tips));
