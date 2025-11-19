@@ -85,7 +85,7 @@ btnHold.addEventListener('click', function () {
       scores[activePlayer];
     // check if player score>100..if true..finish game.
 
-    if (scores[activePlayer] >= 100) {
+    if (scores[activePlayer] >= 20) {
       playing = false;
       document
         .querySelector(`.player--${activePlayer}`)
@@ -101,3 +101,18 @@ btnHold.addEventListener('click', function () {
   }
 });
 btnNew.addEventListener('click', init);
+
+// // the odin project practice
+// let answer = Number(prompt('Enter your number here'));
+
+// for (let i = 1; i <= answer; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log('FizzBuzz');
+//   } else if (i % 5 === 0) {
+//     console.log('Buzz');
+//   } else if (i % 3 === 0) {
+//     console.log('Fizz');
+//   } else {
+//     console.log(i);
+//   }
+// }
